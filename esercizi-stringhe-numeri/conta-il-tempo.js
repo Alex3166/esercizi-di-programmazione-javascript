@@ -13,4 +13,16 @@
   http://www.imparareaprogrammare.it
 */
 
-var time =0
+var time =12560
+
+var hours=(time - (time % 3600))/3600;
+
+var secRem = time - hours * 3600;
+
+var min = (secRem - (secRem % 60)) / 60;
+
+var sec = secRem - min * 60;
+
+console.log(time + ' secondi sono ' + hours + ' ore, ' + min + ' minuti e ' + sec + ' secondi.');
+
+console.log(`${time} secondi sono ${hours} ore, ${min} minuti e ${sec} secondi.`);
