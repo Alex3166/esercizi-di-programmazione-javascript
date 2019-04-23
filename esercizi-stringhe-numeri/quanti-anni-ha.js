@@ -11,3 +11,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var annoCorr = 2018;
+
+var annoNasc = 1991;
+
+var eta = annoCorr-annoNasc;
+
+var annimanc = 100 - eta;
+
+console.log(`La tua età è di ${eta} anni e te ne mancano ${annimanc} per arrivare a 100.`);
